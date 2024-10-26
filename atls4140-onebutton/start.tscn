@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7c3o871fkl57"]
+
+[ext_resource type="Texture2D" uid="uid://b13b522ov3ymi" path="res://HomeScreen.jpeg" id="1_8wsqy"]
+[ext_resource type="Script" path="res://start.gd" id="1_dydpk"]
+
+[node name="Start" type="Node2D"]
+script = ExtResource("1_dydpk")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.11042, 0.895853)
+texture = ExtResource("1_8wsqy")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 72.0
+offset_top = 107.0
+offset_right = 476.0
+offset_bottom = 160.0
+theme_override_colors/font_color = Color(0.701961, 0.937255, 0.968627, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "Press [SPACE] to start!"
+metadata/_edit_use_anchors_ = true
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 131.0
+offset_top = 176.0
+offset_right = 558.0
+offset_bottom = 251.0
+scale = Vector2(0.630573, 0.713963)
+theme_override_colors/font_color = Color(0.705882, 0.909804, 0.478431, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 26
+text = "Hold [SPACE] to blow your bubble, 
+but be careful, don't pop it!"

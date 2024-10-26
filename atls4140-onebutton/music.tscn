@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://c75ywg7cjrfmw"]
+
+[ext_resource type="AudioStream" uid="uid://ountj7xlj8h8" path="res://Happy.mp3" id="1_5vxqm"]
+[ext_resource type="Script" path="res://music.gd" id="2_v8neo"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_5vxqm")
+bus = &"Music"
+script = ExtResource("2_v8neo")

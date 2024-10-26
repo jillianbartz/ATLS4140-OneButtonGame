@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://b11jy6xa1uymq"]
+
+[ext_resource type="Script" path="res://start.gd" id="1_abo2u"]
+[ext_resource type="Texture2D" uid="uid://b13b522ov3ymi" path="res://HomeScreen.jpeg" id="2_4ovde"]
+
+[node name="End" type="Node2D"]
+script = ExtResource("1_abo2u")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1.11042, 0.895853)
+texture = ExtResource("2_4ovde")
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 54.0
+offset_top = 58.0
+offset_right = 486.0
+offset_bottom = 223.0
+theme_override_colors/font_color = Color(0.97, 0.2037, 0.2037, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 38
+text = "You Lost!
+
+Press [SPACE] to restart"
+metadata/_edit_use_anchors_ = true
